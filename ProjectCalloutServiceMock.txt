@@ -1,10 +1,14 @@
 @isTest
-global class ProjectCalloutServiceMock implements HttpCalloutMock {
-   global HTTPResponse respond(HTTPRequest request) {
+global class ProjectCalloutServiceMock implements HttpCalloutMock{
+   //Implement http mock callout here
+   // Implement this interface method
+   global HTTPResponse respond(HTTPRequest request){
+       // Create a fake response
        HttpResponse response = new HttpResponse();
        response.setHeader('Content-Type', 'application/json');
-       response.setBody('{"project":12345}');
-       response.setStatusCode(200);
+       response.setStatus('OK');
+       response.setStatusCode(201);
+              
        return response;
    }
 }
