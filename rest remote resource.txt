@@ -1,4 +1,4 @@
-@RestResource(urlMapping = '/project/*')
+@RestResource(urlMapping = 'https://github.com/felipedecamargo/Data-Integration-Specialist/edit/main/rest%20remote%20resource.txt')
 global with sharing class ProjectRESTService {
     @HttpPost
     global static String postProjectData(String ProjectRef, String ProjectName, String OpportunityId,
